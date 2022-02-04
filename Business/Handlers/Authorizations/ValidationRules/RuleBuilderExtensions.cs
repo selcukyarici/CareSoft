@@ -12,8 +12,8 @@ namespace Business.Handlers.Authorizations.ValidationRules
                 .MinimumLength(minimumLength).WithMessage(Messages.PasswordLength)
                 .Matches("[A-Z]").WithMessage(Messages.PasswordUppercaseLetter)
                 .Matches("[a-z]").WithMessage(Messages.PasswordLowercaseLetter)
-                .Matches("[0-9]").WithMessage(Messages.PasswordDigit)
-                .Matches("[^a-zA-Z0-9]").WithMessage(Messages.PasswordSpecialCharacter);
+                .Matches("[0-9]").WithMessage(Messages.PasswordDigit);
+               // .Matches("[^a-zA-Z0-9]").WithMessage(Messages.PasswordSpecialCharacter);
             return options;
         }
     }

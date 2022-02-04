@@ -18,7 +18,7 @@
 </div>
 <div class="sidebar-wrapper">
   <div class="nav-container">
-    <ul class="nav">
+    <ul class="nav"  *ngIf="checkClaim('ManegementMenu')">
       <li routerLinkActive="active">
         <a data-toggle="collapse" class="nav-link" href="#Management">
           <i class="material-icons">widgets</i>
